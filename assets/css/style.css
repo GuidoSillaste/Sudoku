@@ -3,29 +3,71 @@ body {
     padding: 0;
     text-align: center;
 }
-header {
+body {
+    margin: 0;
     text-align: center;
+    background-color: rgb(244, 248, 248);
 }
 * {
     box-sizing: border-box;
 }
-input {
-    height: 40px;
-    width: 40px; 
-    border: solid 1px;  
+.backg {
+    width: 743px;
+    margin: 20px auto;
+    background-color: rgb(209, 238, 186);
+    padding: 20px;
+    border-radius: 60px;
+}
+
+.cube {
+    height: 60px;
+    width: 60px; 
+    border: solid 1px black;  
     text-align: center;
 }
 .square {
-    height: 120px;
-    width: 120px;
-    border: solid 1px;
+    height: 183px;
+    width: 183px;
+    border: solid 2px black;
     display: grid;
     grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
 }
 .board {
-    height: 360px;
-    width: 360px;
+    height: 543px;
+    width: 543px;
     display: grid;
     grid-template-columns: auto auto auto;
-    margin: 10px auto;
+    margin: 20px auto;
+}
+h1 {
+    padding: 30px;
+    font-size: 44px;
+}
+.btn {
+    font-size: 20px;
+    padding: 5px 20px 5px 20px;
+    box-shadow: 3px 2px 2px 1px gray;
+    border-radius: 20px;
+}
+.btn:hover {
+    transform: scale(1.05);
+}
+.difficulty {
+    width: 543px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.score-table {
+    width: 543px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    line-height: 0;
+}
+p {
+    width: 50%;
+    text-align: start;
+    font-size: 22px;
 }
